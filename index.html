@@ -1,0 +1,372 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Titanium Mobile Development - Andrew McElroy</title>
+
+		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
+		<meta name="author" content="Andrew McElroy">
+
+                <script type="text/javascript" src="/p/live.js"></script>
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<link rel="stylesheet" href="lib/monokai.css">
+
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+				
+				<!--[if lt IE 9]>
+				  <script type="text/javascript" src="/js/excanvas/excanvas.js"></script>
+				<![endif]-->
+				<script type="text/javascript" src="js/spinners/spinners.js"></script>
+				<script type="text/javascript" src="js/lightview/lightview.js"></script>
+
+				<link rel="stylesheet" type="text/css" href="css/lightview/lightview.css"/>			
+			
+	
+                <script src="http://code.highcharts.com/highcharts.js"></script>
+                <script src="http://code.highcharts.com/modules/exporting.js"></script>
+				<script src="lib/hctheme.js"></script>
+				<script type="text/javascript">
+
+				</script>
+
+	</head>
+	
+	<body>
+		
+		<div id="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Titanium Mobile Development 101</h1>
+                                        <h3 class="inverted"><span class="others-green">Andrew McElroy</span></h3>
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
+						document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+				</section>
+				 <section>
+			            <h1>Andrew McElroy</h1>
+									<p>TCE Level 2</p>
+									<p>Twitter: Sophrinix</p>
+									<a href="https://Codexlabs.com"><img src="assets/imgs/codexlabs.png"></a><br>
+									<p> <a href="http://Github.com/sophrinix/coderfaire-2012-titanium-talk">Coder Faire 2012 - Titanium Mobile Development 101 </a>Github.com/sophrinix/coderfaire12</p>
+
+			  </section>
+				<!-- section>
+				<h1>Not a commercial</h1>
+				<p>I have been building real apps with titanium since 2009</p>
+				<p>I am a TCE (Level 2) trainer.</p>
+				<p>Some of my practices differ from corporate</p>
+				</section>
+				<section>
+					<h1> However they are changing fast</h1>
+				</section -->
+				
+				<section>
+				<h1>Mobile is Massive</h1>
+				<img src="assets/Mobile-vs-Desktop-morgan-stanley.png">
+				</section>
+				
+				<section>
+				<h2>Mobile is Diverse</h2>
+				<img src="assets/imgs/multios.png">
+				</section>
+				
+				<section>
+				<h2>and changing rapidly</h2>
+			<img src="assets/imgs/landscape.png">
+				</section>
+				
+				<section>
+				<h3>There is an expectation for good UX</h3>
+				<img src="assets/imgs/uxexpect.png">
+				<p>source:http://www.uxbooth.com/blog/12207/	 </p>
+				</section>
+				
+				<section>
+				<h2>Native vs Web have different strengths</h2>
+				<img src="assets/imgs/mobile-vs-html.png"/>
+				</section>
+				
+				<section>
+				<h1>Why not stay agnostic and leverage both?</h1>
+				</section>
+			
+				
+				
+				<section>
+				<h1>Enter Titanium</h1>
+				<div style="margin-left:150px;height:600px;width:600px;">
+					<div style="float:left">
+				<img src="assets/imgs/titanium.png">
+				</div>
+				<div style="float:right">
+				<img src="assets/imgs/appcelerator-logo.png">
+				</div>
+				</div>
+				</section>
+					<section>
+					<h1>Open Source</h1>
+					<p>Apache 2 License</p>
+					<a href="Github.com/appcelerator/titanium_mobile">Github.com/appcelerator/titanium_mobile</a>
+					</section>
+					
+					<section>
+					<h1>Getting Started is easy</h1>
+					<p>Appcelerator.com</p>
+					<p>grab the sdk and get coding</p>
+					<p>You'll need the android sdk and a mac for iOS</p>
+					</section>
+				
+				<section>
+				<h1>Get real native development AND (emerging) mobile web</h1>
+				<p>from the same code base</p>
+				</section>
+				
+				<section>
+				<h1>It's NOT "write once run anywhere"</h1>
+				
+				</section>
+				<section>
+				<h1>Remember Java Applets</h1>
+				
+				</section>
+				<section>
+				<h1>and how terrible they were</h1>
+				</section>
+				
+				<section>
+				<h1>Every platform has it's quarks and idioms</h1>
+				</section>
+				
+				<section>
+					<p>More Like:</p>
+				<h1>write once & adapt every where</h1>
+				</section>
+				
+				<section>
+				<h1>Platforms Supported</h1>
+				<div style="mmargin-left:150px;width:700px;height:300px">
+					<div style="float:left">
+						<img src="assets/imgs/ios.png">
+					</div>
+					<div style="float:left">
+						<img src="assets/imgs/android.png">
+					</div>
+					<div style="float:left">
+						<img src="assets/bblogo_gray_004.jpeg">
+					</div>
+				</div>
+				<p>iPhone iPad Android android tables html5 mobile web faded blackberry</p>
+				</section>
+				
+					<section>
+					<h1>Blackberry didn't pan out</h1>
+					<p>But stay tuned...</p>
+						</section>
+
+					<section>
+						<h2>Appcelerator's official response:</h2><blockquote>"We are not really going to support older Blackberry platform and we are not encouraging our developers to use existing beta so it is advisable not to target it for the class. We are working on a new Blackberry platform that targets Blackberry 10 (BBX) that would be out in few months ..."</blockquote>
+					</section>
+					<section>
+						<p>Leaked footage of Appcelerator's Blackberry SDK team*</p>
+					 
+			
+						
+						<video src="assets/istock_corporate_blackberry.mov"  type="video/mov" width="640" height="480" controls="true">
+						</video>
+						<p>* not really, but it's a good simulation on the annoyance of native Blackberry legacy development</p>
+						</section>
+
+				
+				<section>
+				<h1>Some example apps</h1>
+				</section>
+				
+				<section>
+				<h1>How does it work?</h1>
+				<p>a naive look</p>
+				<img src="assets/imgs/tistudio_architecture_med.png" height="400">
+				</section>
+				
+				<section>
+				<h1>A deeper look</h1>
+				
+				<img src="assets/imgs/titanium-stack.png">
+				</section>
+				
+				<section>
+				<h1>Let's look at the API</h1>
+				<p><a href="Docs.appcelerator.com">Docs.appcelerator.com</a> is your best friend</p>
+				</section>
+				
+				<section>
+				<h1>Let's write some code</h1>
+				</section>
+				
+				<section>
+					<h1>I'll just add this one feature...</h1>
+				</section>
+				
+				<section data-state="epicfail">
+			  </section>
+			
+			 <section>
+			 <h1>Here is how you would test drive it</h1>
+			 </section>
+			
+				<section>
+						<h1>A (trivial) TDD loop</h1>
+				</section>
+			
+				<section>
+						<p>Example spec</p>
+						<img src="assets/imgs/tdd-example.png">
+				</section>
+				
+				<section>
+						<p>implementation</p>
+						<img src="assets/imgs/imp-code.png">
+				</section>
+				<section>
+						
+						<img src="assets/imgs/test-pass.png" height="600" border="0">
+				</section>
+				<section>
+						<p>on reporters</p>
+						<p>see: https://github.com/sgrimault/jasmine-titanium-reporters</p>
+						<ul>
+						<li>ConsoleReporter – Report test results using Titanium API logging.</li>
+						<li>	JUnitXmlReporter - Report test results to a file (using Rhino or PyPhantomJS) in JUnit XML Report format.</li>
+						</ul>
+				</section>
+				<section>
+						<h1>This isn't a talk on TDD</h1>
+				</section>
+	
+				
+				<section>
+				<h1>How does all this work?</h1>
+				</section>
+				
+				<section>
+				<p>A look at the stack</p>
+				</section>
+			
+				
+				<section>
+				<h1>Prove it's native Code</h1>
+				</section>
+				
+				<section>
+				<h1>CommonJS and Best Practices</h1>
+				</section>
+
+				<section>
+				<h1>Lets write a (trivial) objc module for titanium</h1>
+				</section>
+				
+				
+				<section>
+				<p>demo for this</p>
+				</section>
+				
+				<section>
+				<p>tdd it with cedar. i'll leave this as an exercise to the reader</p>
+				<p>https://github.com/pivotal/cedar</p>
+				</section>
+				
+				<!-- section>
+				<h1>BONUS ROUND</h1>
+				<p>How about a ruby motion module for titanium</p>
+				</section -->
+				
+				<section>
+				<h1>QuickTiGame2d</h1>
+			<p>3rd party module to write 2d games</p>
+				</section>
+				<section>
+				<h1>Thanks</h1>
+			
+				</section>
+				
+				
+
+
+				
+	
+	
+                <section>
+                    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Titanium Mobile Development</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Sophrinix/preso" property="cc:attributionName" rel="cc:attributionURL">Andrew McElroy</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br /> This presentation uses <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hakimel/reveal.js" rel="dct:source"></a>RevealJS.</p>
+
+<br><br><p>The "leaked video" is owned by istockphoto and is not included in the repository</p>
+                </section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+		
+		<script src="js/reveal.js"></script>
+
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: false,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: false,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>
